@@ -1,12 +1,14 @@
-const registration=require("./functions/RegistrationProcess")
+const registration=require("./functions/RegistrationProcess");
+var cors = require('cors');
+
 module.exports=(router)=>{
     console.log("***********Router Set*************");
-    router.get('/',(req, res)=>{
+    router.get('/',cors(),(req, res)=>{
         res.send({
             "response":"Hello EV Server"
         })
     })
-    router.post('/vehicle_registration',(req, res)=>{
+    router.post('/vehicle_registration',cors(),(req, res)=>{
         console.log(req);
 
         registration.register(req.body).then(result=>{
