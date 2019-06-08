@@ -1,0 +1,25 @@
+{
+  "name": "electricvehicle",
+  "version": "1.0.0",
+  "description": "hackhathon project on ev charging",
+  "main": "routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidhikpmg/ElectricVehicle.git"
+  },
+  "author": "Khetesh Rotangan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vidhikpmg/ElectricVehicle/issues"
+  },
+  "homepage": "https://github.com/vidhikpmg/ElectricVehicle#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.5.13",
+    "nodemon": "^1.19.1"
+  }
+}
